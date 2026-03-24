@@ -44,8 +44,8 @@ The project demonstrates **object-oriented programming**, **role-based access**,
 
 
 ---
-
 ## Project Structure
+
 MovieManagementSystem/
 ├── app/
 │   └── Main.java                 # Entry point of the application
