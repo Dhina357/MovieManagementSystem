@@ -41,6 +41,26 @@ The project demonstrates **object-oriented programming**, **role-based access**,
 - **Role-Based Access Control**  
 - **Console-Based Menu Design**
 - 
+
+
+---
+
+## Project Structure
+MovieManagementSystem/
+├── app/
+│ └── Main.java
+├── models/
+│ ├── User.java
+│ ├── Movie.java
+│ ├── Show.java
+│ └── Booking.java
+├── services/
+│ ├── AdminService.java
+│ ├── StaffService.java
+│ ├── CustomerService.java
+│ └── AuthService.java
+└── utils/
+└── Validation.java
 ---
 
 ## How It Works
@@ -57,7 +77,20 @@ The project demonstrates **object-oriented programming**, **role-based access**,
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
-
 ---
-
-## Project Structure
+2 . Navigate to project root:
+cd MovieManagementSystem
+Compile all Java files:
+javac app/Main.java models/*.java services/*.java utils/*.java
+Run the project:
+java app.Main
+Topics Covered
+Topic	Description
+Java Basics	Variables, loops, conditionals, Scanner input
+OOP	Classes, Objects, Constructors, Encapsulation
+Collections	ArrayList for dynamic data storage
+Role-Based Access	Different menus and permissions for Admin, Staff, Customer
+Input Validation	Numeric and string validations, future date checks
+Booking System Logic	Linking bookings to users and shows via IDs
+Error Handling	Try-catch, invalid input prevention
+Console UI	Interactive menu-driven design
