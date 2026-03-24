@@ -48,19 +48,19 @@ The project demonstrates **object-oriented programming**, **role-based access**,
 ## Project Structure
 MovieManagementSystem/
 ├── app/
-│ └── Main.java
-├── models/
-│ ├── User.java
-│ ├── Movie.java
-│ ├── Show.java
-│ └── Booking.java
-├── services/
-│ ├── AdminService.java
-│ ├── StaffService.java
-│ ├── CustomerService.java
-│ └── AuthService.java
-└── utils/
-└── Validation.java
+│   └── Main.java                 # Entry point of the application
+├── models/                       # Data models / entities
+│   ├── User.java                 # User class with ID, name, email, role
+│   ├── Movie.java                # Movie class with ID, title, genre, etc.
+│   ├── Show.java                 # Show class with ID, movie ID, date, time, seats
+│   └── Booking.java              # Booking class linking user ID and show ID
+├── services/                     # Business logic / role-based operations
+│   ├── AdminService.java         # Admin operations (add/view/delete movies, view bookings)
+│   ├── StaffService.java         # Staff operations (schedule/update/cancel shows)
+│   ├── CustomerService.java      # Customer operations (profile, book tickets, view history)
+│   └── AuthService.java          # User registration and login
+└── utils/                        # Utility/helper classes
+    └── Validation.java           # Input validation (dates, ratings, IDs, etc.)
 ---
 
 ## How It Works
